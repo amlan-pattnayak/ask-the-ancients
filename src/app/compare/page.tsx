@@ -37,7 +37,7 @@ export default function AgoraPage() {
               background: "linear-gradient(135deg, rgba(20,28,48,0.95) 0%, rgba(15,23,42,0.98) 100%)",
               border: "1px solid rgba(212,168,67,0.25)",
               boxShadow: "0 4px 32px rgba(2,6,23,0.6), inset 0 1px 0 rgba(212,168,67,0.08)",
-              // @ts-ignore
+              // @ts-expect-error -- CSS custom property not in CSSProperties
               "--tw-ring-color": "var(--accent)",
             }}
           >

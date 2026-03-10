@@ -30,12 +30,13 @@ export default function SettingsPage() {
   const principal = usePrincipal();
   const [signingOut, setSigningOut] = useState(false);
   const [avatarError, setAvatarError] = useState(false);
-  const [providerMode, setProviderMode] = useState<"guest" | "byok">("guest");
+  const [providerMode, setProviderMode] = useState<"guest" | "byok">(() => {
+    if (typeof window === "undefined") return "guest";
+    return readProviderMode();
+  });
 
-  // Read provider mode from localStorage after mount (client-only)
+  // Re-sync if the user changes mode from another tab/component
   useEffect(() => {
-    setProviderMode(readProviderMode());
-    // Re-sync if the user changes mode on this page
     function onStorage() { setProviderMode(readProviderMode()); }
     window.addEventListener("storage", onStorage);
     return () => window.removeEventListener("storage", onStorage);

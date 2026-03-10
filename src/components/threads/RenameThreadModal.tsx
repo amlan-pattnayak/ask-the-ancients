@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IconClose } from "@/components/ui/icons";
 
 interface RenameThreadModalProps {
@@ -20,12 +20,17 @@ export default function RenameThreadModal({
   onClose,
   onSave,
 }: RenameThreadModalProps) {
-  const [value, setValue] = useState("");
+  const derivedInitial = open ? (initialTitle?.trim() || `${fallbackTitle} chat`) : "";
+  const [value, setValue] = useState(derivedInitial);
 
-  useEffect(() => {
-    if (!open) return;
+  // Reset value when modal opens with new props
+  const [prevOpen, setPrevOpen] = useState(open);
+  if (open && !prevOpen) {
     setValue(initialTitle?.trim() || `${fallbackTitle} chat`);
-  }, [open, initialTitle, fallbackTitle]);
+  }
+  if (open !== prevOpen) {
+    setPrevOpen(open);
+  }
 
   if (!open) return null;
 
