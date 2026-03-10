@@ -2,6 +2,10 @@
 
 An open-source experiment in retrieval-grounded philosophy chat.
 
+**[Try the live demo](https://ask-the-ancients.vercel.app)**
+
+![Landing page](public/screenshots/landing.jpg)
+
 ## What is this?
 
 Ask the Ancients is a Next.js + Convex app where you can chat with historical philosophers using responses grounded in source passages, not generic roleplay. Current roster includes Marcus Aurelius, Seneca, Epictetus, Patanjali, Adi Shankaracharya, Aristotle, Spinoza, The Buddha, Mahavira, and Ramanuja.
@@ -9,6 +13,8 @@ Ask the Ancients is a Next.js + Convex app where you can chat with historical ph
 ## Why it exists
 
 Most philosophy apps either feel like trivia or generic LLM chat. This project explores whether a small, inspectable RAG stack can make philosophical inquiry more curious, concrete, and verifiable.
+
+![Desktop chat with citation rail](public/screenshots/chat-desktop.jpg)
 
 ## Features
 
