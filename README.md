@@ -99,9 +99,7 @@ bun run coach
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [ATTRIBUTION.md](ATTRIBUTION.md)
 - [ADDING_PHILOSOPHERS.md](ADDING_PHILOSOPHERS.md)
-- [docs/LEARNING_COACH_USAGE.md](docs/LEARNING_COACH_USAGE.md)
-- [docs/learning-progress.md](docs/learning-progress.md)
 
-## License status
+## License
 
-Project code license file is currently missing. Add a top-level `LICENSE` before public release. Corpus/source licensing notes are in [ATTRIBUTION.md](ATTRIBUTION.md).
+MIT — see [LICENSE](LICENSE). Corpus/source licensing notes are in [ATTRIBUTION.md](ATTRIBUTION.md).
