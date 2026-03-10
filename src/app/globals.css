@@ -1,0 +1,288 @@
+@import "tailwindcss";
+
+/* ── Design System Tokens ──────────────────────────────────────────────── */
+@layer base {
+  :root {
+    /* Color palette */
+    --color-navy:         #0a1120;
+    --color-navy-card:    #111827;
+    --color-navy-light:   #1a2539;
+    --color-navy-subtle:  #243044;
+    --color-navy-muted:   #2e3d54;
+    --color-gold:         #c9973a;
+    --color-gold-light:   #e0b45a;
+    --color-gold-bright:  #f0c96a;
+    --color-gold-muted:   #8a6826;
+    --color-gold-glow:    rgba(201, 151, 58, 0.15);
+    --color-cream:        #f5f0e8;
+    --color-cream-muted:  #b8c0cc;
+    --color-slate:        #8899aa;
+    --color-slate-light:  #5a6b7d;
+    --color-white:        #ffffff;
+
+    /* Semantic tokens (dark mode default) */
+    --bg-primary:    var(--color-navy);
+    --bg-card:       var(--color-navy-card);
+    --bg-secondary:  var(--color-navy-light);
+    --bg-elevated:   var(--color-navy-subtle);
+    --text-primary:  var(--color-cream);
+    --text-secondary:var(--color-cream-muted);
+    --text-muted:    var(--color-slate);
+    --accent:        var(--color-gold);
+    --accent-light:  var(--color-gold-light);
+    --accent-hover:  var(--color-gold-bright);
+    --accent-glow:   var(--color-gold-glow);
+    --border:        rgba(255, 255, 255, 0.07);
+    --border-accent: rgba(201, 151, 58, 0.25);
+    --border-strong: rgba(255, 255, 255, 0.12);
+
+    /* Shadows */
+    --shadow-card:  0 1px 3px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.25);
+    --shadow-glow:  0 0 32px rgba(201, 151, 58, 0.12);
+
+    /* Motion */
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+/* ── Base Styles ────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100dvh;
+  }
+
+  /* Philosopher text uses serif font */
+  .philosopher-text {
+    font-family: var(--font-crimson-pro), Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  /* Refined scrollbar */
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(201, 151, 58, 0.2);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 151, 58, 0.35);
+  }
+}
+
+/* ── Utility Classes ────────────────────────────────────────────────────── */
+@layer utilities {
+  .bg-primary   { background-color: var(--bg-primary); }
+  .bg-secondary { background-color: var(--bg-secondary); }
+  .bg-elevated  { background-color: var(--bg-elevated); }
+
+  .text-primary   { color: var(--text-primary); }
+  .text-secondary { color: var(--text-secondary); }
+  .text-muted     { color: var(--text-muted); }
+  .text-accent    { color: var(--accent); }
+
+  .border-token  { border-color: var(--border); }
+  .border-accent { border-color: var(--border-accent); }
+
+  /* Grain texture overlay — applied via ::before pseudo-element */
+  .grain {
+    position: relative;
+  }
+  .grain::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.028;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+
+  /* Card — elevated surface with shadow */
+  .card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Card with gold top accent */
+  .card-accent {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-top: 1px solid var(--border-accent);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-card);
+    position: relative;
+  }
+
+  /* Philosopher school badge */
+  .school-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: rgba(201, 151, 58, 0.1);
+    color: var(--color-gold-light);
+    border: 1px solid var(--border-accent);
+  }
+
+  /* Gold-tinted horizontal rule */
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--border-accent) 20%,
+      var(--border-accent) 80%,
+      transparent
+    );
+  }
+
+  /* Ambient glow behind elements */
+  .glow-gold {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Ink dot — used in place of bullet / favicon substitutes */
+  .ink-dot::before {
+    content: '·';
+    color: var(--accent);
+    margin-right: 0.25em;
+  }
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────── */
+@layer utilities {
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes thinking-pulse {
+    0%, 100% { opacity: 0.3; transform: scale(0.85); }
+    50%       { opacity: 1;   transform: scale(1); }
+  }
+
+  @keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+
+  @keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.5s var(--ease-out-expo) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease forwards;
+  }
+
+  .animate-thinking {
+    animation: thinking-pulse 1.4s ease-in-out infinite;
+  }
+
+  .animate-cursor {
+    animation: cursor-blink 0.9s step-end infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      var(--bg-secondary) 25%,
+      var(--bg-elevated) 50%,
+      var(--bg-secondary) 75%
+    );
+    background-size: 200% auto;
+    animation: shimmer 1.4s ease-in-out infinite;
+  }
+
+  /* Stagger helpers */
+  .delay-75  { animation-delay: 75ms; }
+  .delay-150 { animation-delay: 150ms; }
+  .delay-225 { animation-delay: 225ms; }
+  .delay-300 { animation-delay: 300ms; }
+
+  /* Hide scrollbar (carousel) */
+  .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+
+  /* Dedicated dropdown scrollbar that stays visually inside the menu panel */
+  .model-menu-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(201, 151, 58, 0.35) transparent;
+  }
+  .model-menu-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .model-menu-scroll::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 6px 0;
+  }
+  .model-menu-scroll::-webkit-scrollbar-thumb {
+    background: rgba(201, 151, 58, 0.3);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  .model-menu-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 151, 58, 0.45);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  @keyframes splash-fade-out {
+    0%   { opacity: 1; }
+    70%  { opacity: 1; }
+    100% { opacity: 0; pointer-events: none; }
+  }
+
+  @keyframes splash-logo-in {
+    from { opacity: 0; transform: translateY(12px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  @keyframes splash-tagline-in {
+    from { opacity: 0; }
+    to   { opacity: 0.55; }
+  }
+
+  @keyframes hero-in {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

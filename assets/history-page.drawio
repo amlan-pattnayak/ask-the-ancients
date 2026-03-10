@@ -1,0 +1,211 @@
+<mxfile host="app.diagrams.net" modified="2026-02-16T00:00:00.000Z" agent="Claude Code" version="24.0.0">
+  <diagram name="History Page" id="history-page">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="414" pageHeight="896" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Background -->
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="414" height="896" as="geometry" />
+        </mxCell>
+
+        <!-- Header -->
+        <mxCell id="header-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="414" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="back-btn" value="←" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontColor=#faf8f0;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="10" y="25" width="40" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="title" value="History" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontColor=#faf8f0;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="25" width="294" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="search-icon" value="🔍" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontColor=#faf8f0;" vertex="1" parent="1">
+          <mxGeometry x="364" y="25" width="40" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="divider1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#334155;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="80" width="414" height="1" as="geometry" />
+        </mxCell>
+
+        <!-- Search Bar -->
+        <mxCell id="search-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#334155;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100" width="374" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="search-placeholder" value="🔍 Search conversations..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#64748b;fontFamily=Inter;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100" width="374" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- TODAY Section -->
+        <mxCell id="today-label" value="TODAY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;fontStyle=1;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="0" y="165" width="414" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Conversation Card 1 -->
+        <mxCell id="card1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#334155;arcSize=5;align=left;verticalAlign=top;spacingTop=15;spacingLeft=60;spacingRight=15;spacingBottom=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="195" width="374" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="avatar1" value="◉" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d4a843;strokeColor=none;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry x="30" y="200" width="35" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phil1-name" value="Marcus Aurelius" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#faf8f0;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="time1" value="2 hours ago" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="290" y="200" width="94" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="school1" value="STOIC" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#d4a843;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="222" width="100" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview1" value="&quot;How do I stop worrying about things&#xa;I can't control?&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#cbd5e1;fontFamily=Inter;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="80" y="242" width="304" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="stats1" value="8 messages · 3 citations saved" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="80" y="275" width="304" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Conversation Card 2 -->
+        <mxCell id="card2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#334155;arcSize=5;align=left;verticalAlign=top;spacingTop=15;spacingLeft=60;spacingRight=15;spacingBottom=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="310" width="374" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="avatar2" value="◉" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d4a843;strokeColor=none;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry x="30" y="315" width="35" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phil2-name" value="Patanjali" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#faf8f0;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="315" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="time2" value="5 hours ago" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="290" y="315" width="94" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="school2" value="YOGA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#d4a843;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="337" width="100" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview2" value="&quot;What is the difference between&#xa;concentration and meditation?&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#cbd5e1;fontFamily=Inter;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="80" y="357" width="304" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="stats2" value="12 messages · 5 citations saved" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="304" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- YESTERDAY Section -->
+        <mxCell id="yesterday-label" value="YESTERDAY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;fontStyle=1;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="0" y="430" width="414" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Conversation Card 3 -->
+        <mxCell id="card3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#334155;arcSize=5;align=left;verticalAlign=top;spacingTop=15;spacingLeft=60;spacingRight=15;spacingBottom=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="460" width="374" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="avatar3" value="◉" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d4a843;strokeColor=none;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry x="30" y="465" width="35" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phil3-name" value="Seneca" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#faf8f0;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="465" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="time3" value="yesterday" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="290" y="465" width="94" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="school3" value="STOIC" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#d4a843;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="487" width="100" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview3" value="&quot;I feel like I'm wasting my life&#xa;on things that don't matter&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#cbd5e1;fontFamily=Inter;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="80" y="507" width="304" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="stats3" value="15 messages · 7 citations saved" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="304" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- LAST WEEK Section -->
+        <mxCell id="lastweek-label" value="LAST WEEK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;fontStyle=1;spacingLeft=20;" vertex="1" parent="1">
+          <mxGeometry x="0" y="580" width="414" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Conversation Card 4 -->
+        <mxCell id="card4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=#334155;arcSize=5;align=left;verticalAlign=top;spacingTop=15;spacingLeft=60;spacingRight=15;spacingBottom=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="610" width="374" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="avatar4" value="◉" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d4a843;strokeColor=none;fontSize=18;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry x="30" y="615" width="35" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phil4-name" value="Shankaracharya" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#faf8f0;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="615" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="time4" value="5 days ago" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="290" y="615" width="94" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="school4" value="VEDANTA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#d4a843;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="637" width="100" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="preview4" value="&quot;Is the self an illusion?&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#cbd5e1;fontFamily=Inter;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="80" y="657" width="304" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="stats4" value="6 messages · 2 citations saved" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="80" y="685" width="304" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Help Text -->
+        <mxCell id="help-divider" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#334155;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="730" width="374" height="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="help-text" value="Swipe left on any conversation to delete" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#64748b;fontFamily=Inter;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="20" y="745" width="374" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Bottom Navigation -->
+        <mxCell id="nav-divider" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#334155;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="816" width="414" height="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nav-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e293b;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="817" width="414" height="79" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nav-philosophers" value="🏛&#xa;Philosophers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="20" y="832" width="88" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nav-history" value="💬&#xa;History" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#d4a843;fontFamily=Inter;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="113" y="832" width="88" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nav-saved" value="🔖&#xa;Saved" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="206" y="832" width="88" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nav-settings" value="⚙&#xa;Settings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#64748b;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="299" y="832" width="88" height="48" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
